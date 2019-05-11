@@ -13,21 +13,23 @@ import com.wangwei.linkedlist.leetcode.solution_203.Solution2;
  */
 public class Solution {
     public ListNode reverseList(ListNode head) {
-        ListNode dummyHead = new ListNode(-1);
-        dummyHead.next = head;
-        ListNode cur = dummyHead;
-        while (cur.next != null){
 
-            if (cur.next == null){
-                dummyHead.next = new ListNode(cur.next.val);
-                cur.next = null;
+        //递归到底的结果
+        if(head == null) return null;
+        if(head.next ==null) return head;
 
-                reverseList()
-            }else
-                cur = cur.next;
-        }
+        //假设ReverseList(head.next)已经将以head.next为头结点的链表翻转；
+        //同时返回翻转后链表的头节点reverse_head_next
+        //那么接下来的工作就是将head节点加入这个翻转后的链表里。
+        ListNode reverse_head_next = reverseList(head.next);
 
-        return cur;
+        // 上面的代码递归处理完了head.next对应的链表
+        // 下面的代码用来维护head
+        ListNode reverse_tail = head.next; // 这个变量不声明也可以，声明语义更清晰：）
+        reverse_tail.next = head;
+        head.next = null;
+
+        return reverse_head_next;
     }
 
     public static void main(String[] args) {
