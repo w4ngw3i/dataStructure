@@ -41,6 +41,8 @@ public class ArrayUtils {
 
 
     public static int halfSearch2(int[] arr, int key) {
+        if (arr.length == 1)
+            return 0;
         int min = 0;
         int max = arr.length - 1;
         int mid;

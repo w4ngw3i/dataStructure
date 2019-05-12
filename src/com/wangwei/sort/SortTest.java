@@ -24,13 +24,28 @@ public class SortTest {
         arr[b] = temp;
     }
 
+    public static void insertSort(int[] arr){
+        for (int i = 1; i < arr.length; i++) {
+            int value = arr[i];
+            int j = i - 1;
+            for (; j >= 0; --j){
+                if (arr[j] > value){
+                    arr[j+1] = arr[j];
+                }else
+                    break;
+            }
+
+            arr[j+1] = value;
+        }
+    }
+
     public static void main(String[] args) {
 
         SelectSort selectSort = new SelectSort();
         int[] arr = new int[]{5, 3, 9, 2, 1, 32, 17, 78};
         printArr(arr);
 
-        selectSort.selectSort(arr);
+        insertSort(arr);
 //        bubbleSort(arr);
 
 
