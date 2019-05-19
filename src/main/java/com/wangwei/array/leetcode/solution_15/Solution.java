@@ -1,6 +1,6 @@
 package com.wangwei.array.leetcode.solution_15;
 
-import java.util.List;
+import java.util.*;
 
 /**
  * @auther wangwei
@@ -20,6 +20,44 @@ import java.util.List;
  */
 public class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> res = new LinkedList<>();
+        Arrays.sort(nums);
+        Set<List<Integer>> set = new TreeSet<>();
+//        TreeMap<Integer,List<Integer>> treeMap = new TreeMap<>();
+        List<Integer> list;
+//        int n = 0;
+        for (int i = 0; i < nums.length - 2; i++) {
+            for (int j = i+1; j < nums.length - 1; j++) {
+                for (int k = j+1; k < nums.length; k++) {
+                    if (nums[i] + nums[j] + nums[k] == 0){
+                        list = new ArrayList<>();
+                        list.add(nums[i]);
+                        list.add(nums[j]);
+                        list.add(nums[k]);
+                        set.add(list);
+//                        treeMap.put(n, list);
+//                        n++;
+                    }
 
+                }
+            }
+        }
+
+
+//        for (int i = 0; i < treeMap.size(); i++) {
+//            res.add(treeMap.get(i));
+//        }
+        Iterator<List<Integer>> iterator = set.iterator();
+        while (iterator.hasNext()){
+            res.add(iterator.next());
+        }
+
+        return res;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = new int[]{-1, 0, 1, 2, -1, -4};
+        List<List<Integer>> lists = new Solution().threeSum(nums);
+        System.out.println(lists);
     }
 }
