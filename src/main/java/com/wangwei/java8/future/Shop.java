@@ -81,4 +81,19 @@ public class Shop {
         return new Random().nextDouble() * product.charAt(0) + product.charAt(1);
     }
 
+
+    public String getPrice2(String product) {
+        double price = calculatePrice2(product);
+        Discount.Code code = Discount.Code.values()[
+                new Random().nextInt(Discount.Code.values().length)];
+        return String.format("%s:%.2f:%s", name, price, code);
+    }
+
+
+    private double calculatePrice2(String product) {
+
+        delay();
+
+        return new Random().nextDouble() * product.charAt(0) + product.charAt(1);
+    }
 }
