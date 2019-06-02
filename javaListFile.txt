@@ -1,0 +1,17 @@
+/Users/wangwei/Documents/javaVirtural/CLPreparation.java
+/Users/wangwei/Documents/javaVirtural/Test2.java
+/Users/wangwei/Documents/javaVirtural/Test.java
+/Users/wangwei/Documents/javaVirtural/MyLock.java
+/Users/wangwei/Documents/javaVirtural/LifetimeTest.java
+/Users/wangwei/Documents/javaVirtural/TestDynamic.java
+/Users/wangwei/Documents/javaVirtural/HeapDemo.java
+/Users/wangwei/Documents/javaVirtural/DeadLock.java
+/Users/wangwei/Documents/company/ProjectFile/c360-doc/06设计/demo/endedemo/util/Message.java
+/Users/wangwei/Documents/company/ProjectFile/c360-doc/06设计/demo/endedemo/util/Request0100.java
+/Users/wangwei/Documents/company/ProjectFile/c360-doc/06设计/demo/endedemo/util/HttpPostService.java
+/Users/wangwei/Documents/company/ProjectFile/c360-doc/06设计/demo/endedemo/util/File1600.java
+/Users/wangwei/Documents/company/ProjectFile/c360-doc/06设计/demo/endedemo/util/MessageUtils.java
+/Users/wangwei/Documents/company/ProjectFile/c360-doc/06设计/demo/endedemo/util/AES.java
+/Users/wangwei/Documents/company/ProjectFile/c360-doc/06设计/demo/endedemo/util/RSA.java
+/Users/wangwei/Documents/company/ProjectFile/c360-doc/06设计/demo/endedemo/ImplDemo.java
+/Users/wangwei/Documents/company/ProjectFile/c360-doc/06设计/demo/endedemo/FileTest.java
