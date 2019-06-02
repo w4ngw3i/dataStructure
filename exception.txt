@@ -1,0 +1,2 @@
+java.lang.ArrayIndexOutOfBoundsException: 3
+	at com.wangwei.io.IOLog.main(IOLog.java:15)
