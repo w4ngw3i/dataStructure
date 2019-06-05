@@ -20,7 +20,7 @@ public class Test2 {
 //        Insurance rensou = map.get("rensou");
 //        rensou.getName();
 
-        Optional<Insurance> optionalInsurance = Optional.ofNullable(map.get("pinga"));
+        Optional<Insurance> optionalInsurance = Optional.ofNullable(map.get("haha"));
 
         optionalInsurance.ifPresent((value) -> System.out.println(value.getName()));
 
