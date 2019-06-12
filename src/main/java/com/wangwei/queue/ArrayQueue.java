@@ -7,7 +7,7 @@ import com.wangwei.array.Array;
  * @Auther wangwei
  * @Date 2018/5/1 下午6:44
  */
-public class ArrayQueue<E> implements Queue<E> {
+public class ArrayQueue<E> implements com.wangwei.queue.Queue<E> {
 
     private Array<E> array;
 

@@ -1,5 +1,7 @@
 package com.wangwei.queue;
 
+
+
 /**
  * @Auther wangwei
  * @Date 2018/5/1 下午7:19
