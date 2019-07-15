@@ -1,6 +1,8 @@
 package com.wangwei.io;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @auther wangwei
@@ -24,8 +26,15 @@ public class FileTest {
 
             String line = null;
 
+            List<String> list = new ArrayList<>();
+
             while ((line = bufr.readLine()) != null){
-                System.out.println(line);
+                 list.add(line);
+            }
+
+            list.remove(0);
+            for (String s : list) {
+                System.out.println(s);
             }
 
         } catch (Exception e) {
