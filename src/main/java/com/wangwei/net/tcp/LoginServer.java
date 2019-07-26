@@ -13,7 +13,7 @@ public class LoginServer {
         while (true){
             Socket s = ss.accept();
 
-            new Thread(new UserThread(s)).start();
+            new Thread(new com.wangwei.net.tcp.UserThread(s)).start();
 
         }
     }
