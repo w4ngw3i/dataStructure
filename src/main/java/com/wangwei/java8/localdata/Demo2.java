@@ -11,6 +11,7 @@ public class Demo2 {
     public static void main(String[] args) {
         LocalDate date = LocalDate.now();
 
+
         System.out.println("year:" + date.get(ChronoField.YEAR));
 
         System.out.println(date.get(ChronoField.DAY_OF_YEAR));
