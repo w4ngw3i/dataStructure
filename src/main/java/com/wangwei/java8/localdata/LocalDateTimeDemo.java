@@ -3,6 +3,7 @@ package com.wangwei.java8.localdata;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 /**
  * @auther wangwei
@@ -15,5 +16,7 @@ public class LocalDateTimeDemo {
         LocalDateTime now = LocalDateTime.now();
 
         System.out.println(of.getHour());
+
+        System.out.println(LocalDate.now().minusDays(1).format(DateTimeFormatter.BASIC_ISO_DATE));
     }
 }

@@ -22,6 +22,8 @@ public class InstantDemo {
         System.out.println(BigDecimal.ZERO);
         System.out.println(new BigDecimal(192.77).setScale(2, BigDecimal.ROUND_DOWN));
 
+        System.out.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+
         System.out.println(LocalDate.now().format(DateTimeFormatter.BASIC_ISO_DATE));
 
         System.out.println(LocalDate.now().format(DateTimeFormatter.ISO_LOCAL_DATE));

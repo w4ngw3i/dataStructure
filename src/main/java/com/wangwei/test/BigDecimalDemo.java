@@ -13,6 +13,9 @@ public class BigDecimalDemo {
         String y = "0.1";
         System.out.println(new BigDecimal(x).compareTo(new BigDecimal(y)));
 
+        BigDecimal bigDecimal = new BigDecimal("933.32000000").setScale(2, BigDecimal.ROUND_DOWN);
+        System.out.println(bigDecimal);
+
         AtomicInteger atomicInteger = new AtomicInteger();
 
 
