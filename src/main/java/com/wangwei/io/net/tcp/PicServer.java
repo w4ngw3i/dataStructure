@@ -1,8 +1,6 @@
 package com.wangwei.net.tcp;
 
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.OutputStream;
+
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -15,7 +13,7 @@ public class PicServer {
         ServerSocket ss = new ServerSocket(10009);
         while (true){
             Socket s = ss.accept();
-            new Thread(new PicThread(s)).start();
+            new Thread(new com.wangwei.net.tcp.PicThread(s)).start();
         }
     }
 
