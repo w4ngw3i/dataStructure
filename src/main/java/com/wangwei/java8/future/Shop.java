@@ -69,7 +69,7 @@ public class Shop {
 
     public static void delay(){
         try {
-            Thread.sleep(10000L);
+            Thread.sleep(1000L);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
