@@ -1,7 +1,11 @@
 package com.wangwei.java8.localdata;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.Month;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
 
@@ -12,6 +16,8 @@ import java.time.temporal.TemporalAdjusters;
 public class Demo {
     public static void main(String[] args) {
         LocalDate date = LocalDate.now();
+
+        System.out.println(LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
 
         System.out.println(date.minusMonths(1).with(TemporalAdjusters.firstDayOfMonth()));
         System.out.println(date.minusMonths(1).with(TemporalAdjusters.lastDayOfMonth()));
