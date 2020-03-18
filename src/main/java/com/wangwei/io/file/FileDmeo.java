@@ -20,6 +20,10 @@ public class FileDmeo {
         System.out.println("创建文件是否成功:" + newFile);
 
         File f2 = new File("/Users/wangwei/opt/java/gitHub/dataStructure", "file2.txt");
+        System.out.println("AbsolutePath: " + f2.getAbsolutePath());
+        String parent = f2.getParent();
+        System.out.println(parent);
+        System.out.println("path: " + f2.getPath());
 
         File dir = new File(File.separator + "Users"+ File.separator+"wangwei" + File.separator + "opt"+ File.separator +"java"+ File.separator +"gitHub" +File.separator+ "dataStructure");
 
