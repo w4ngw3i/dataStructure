@@ -28,7 +28,7 @@ public class LocalDateTime2Date {
        /* String dateStr = LocalDate.now().format(DateTimeFormatter.BASIC_ISO_DATE);
         System.out.println(dateConverter(dateStr)); //19700101
 */
-       String dateStr = "19701201";
+       String dateStr = "20181130";
 
         String year = dateStr.substring(0, 4);
 
@@ -36,9 +36,9 @@ public class LocalDateTime2Date {
 
         String day = dateStr.substring(6, 8);
 
-        LocalDate date = LocalDate.of(Integer.valueOf(year), Integer.valueOf(month), Integer.valueOf(day));
+        LocalDate date = LocalDate.of(Integer.parseInt(year), Integer.parseInt(month), Integer.parseInt(day));
 
-        System.out.println(date.format(DateTimeFormatter.ISO_LOCAL_DATE));
+        System.out.println(date.minusDays(1).format(DateTimeFormatter.BASIC_ISO_DATE));
 
 
 

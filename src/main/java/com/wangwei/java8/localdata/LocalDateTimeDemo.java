@@ -11,6 +11,9 @@ import java.time.format.DateTimeFormatter;
  */
 public class LocalDateTimeDemo {
     public static void main(String[] args) {
+
+        int i = Integer.parseInt("0");
+        System.out.println(i);
         LocalDateTime of = LocalDateTime.of(LocalDate.now(), LocalTime.now());
 
         LocalDateTime now = LocalDateTime.now();
