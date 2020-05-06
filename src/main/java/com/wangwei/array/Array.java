@@ -64,7 +64,7 @@ public class Array<E> {
      *
      * @param e
      */
-    public void firstLast(E e) {
+    public void addFirst(E e) {
         add(0, e);
     }
 

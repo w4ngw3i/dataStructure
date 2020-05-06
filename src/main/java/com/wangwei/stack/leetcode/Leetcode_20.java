@@ -40,6 +40,12 @@ public class Leetcode_20 {
             }
         }
         return stack.isEmpty();
+    }
 
+    public static void main(String[] args) {
+        System.out.println(new Leetcode_20().isValid("()[]{}"));
+        System.out.println(new Leetcode_20().isValid("([])"));
+        System.out.println(new Leetcode_20().isValid("(]{})"));
+        System.out.println(new Leetcode_20().isValid(""));
     }
 }

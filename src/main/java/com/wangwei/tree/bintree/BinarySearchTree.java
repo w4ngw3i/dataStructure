@@ -1,4 +1,4 @@
-package com.wangwei.tree;
+package com.wangwei.tree.bintree;
 
 public class BinarySearchTree {
   private Node tree;

@@ -5,28 +5,25 @@ public class LinkedList<E> {
         public E e;
         public Node next;
 
-        public Node(E e, Node next) {
+        private Node(E e, Node next) {
             this.e = e;
             this.next = next;
         }
 
-        public Node(E e) {
+        private Node(E e) {
             this(e,null);
         }
 
-        public Node() {
+        private Node() {
             this(null, null);
         }
     }
-
-//    private Node head;
 
     private Node dummyHead;//使用虚拟节点头
 
     private int size;
 
     public LinkedList() {
-//        head = null;
         dummyHead = new Node();
         size = 0;
     }
@@ -38,43 +35,6 @@ public class LinkedList<E> {
     public boolean isEmpty(){
         return size == 0;
     }
-
-    /**
-     * 不实用虚拟头节点
-     * @param e
-     */
-//    public void addFirst(E e){
-////        Node node = new Node(e);
-////        node.next = head;
-////        head = node;
-//        head = new Node(e, head);
-//
-//        size++;
-//    }
-
-    /**
-     * 实用虚拟头节点
-     * @param index
-     * @param e
-     */
-//    public void add(int index, E e){
-//        if (index < 0 || index > size)
-//            throw new IllegalArgumentException("Add failed, Illegal index.");
-//        if (index == 0)
-//            addFirst(e);
-//        else {
-//            Node pre = head;
-//            for (int i = 0; i < index - 1; i++) {//index-1表示使指针指向待查入节点的前一个节点
-//                pre = pre.next;
-//            }
-////            Node node = new Node(e);
-////            node.next = pre.next;
-////            pre.next = node;
-//            pre.next = new Node(e, pre.next);
-//
-//            size++;
-//        }
-//    }
 
 
     /**
