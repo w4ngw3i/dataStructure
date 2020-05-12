@@ -39,7 +39,7 @@ public class MapDemo {
         List<Integer> integers = asList.stream()
                 .map(i -> i * i)
                 .collect(Collectors.toList());
-        integers.stream().forEach(i -> System.out.print(i));
+        integers.forEach(System.out::println);
 
 
     }

@@ -21,6 +21,7 @@ public class Test2 {
 //        rensou.getName();
 
         Optional<Insurance> optionalInsurance = Optional.ofNullable(map.get("haha"));
+        //Optional<Insurance> optionalInsurance = Optional.ofNullable(map.get("haha"));
 
         optionalInsurance.ifPresent((value) -> System.out.println(value.getName()));
 

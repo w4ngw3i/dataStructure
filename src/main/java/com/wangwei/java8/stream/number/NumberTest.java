@@ -9,7 +9,8 @@ import java.util.stream.IntStream;
 public class NumberTest {
 
     public static void main(String[] args) {
-        long count = IntStream.rangeClosed(1, 100).filter(i -> i%2==0).count();
+        long count = IntStream.rangeClosed(1, 100).filter(i -> i%2==0)
+                .count();
         System.out.println(count);
     }
 }

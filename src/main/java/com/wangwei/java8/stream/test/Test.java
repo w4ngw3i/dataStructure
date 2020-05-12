@@ -40,7 +40,7 @@ public class Test {
         transactions.stream()
                 .filter(t -> t.getYear() == 2011)
                 .sorted(Comparator.comparing(Transaction::getValue))
-                .forEach(t -> System.out.println(t));
+                .forEach(System.out::println);
 
         System.out.println();
 
@@ -105,7 +105,7 @@ public class Test {
         System.out.println("(7) 所有交易中，最高的交易额是多少?");
 
         Optional<Integer> max = transactions.stream()
-                .map(transaction -> transaction.getValue())
+                .map(Transaction::getValue)
                 .distinct()
                 .reduce(Integer::max);
 
